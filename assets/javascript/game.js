@@ -4,18 +4,20 @@ $(document).ready(function() {
 //set variables
 let win = 0;
 let loss = 0;
-let enemy = 0
+let userScore = 0
+let comScore = ''
 
 
 //Start game function
 function game() {
 
 //computer shows a random number between 19-120
-    enemy = Math.floor(Math.random() * 120) + 19;
-
-
-
+    const randomNumber = Math.floor(Math.random() * 120) + 19;
+    
+    
 }
+$("#number-to-guess").append("25");
+console.log(comScore);
 
 
 
