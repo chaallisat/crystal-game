@@ -1,6 +1,8 @@
 body{
     background-color: azure;
-    
+    text-align: center;
+    background-image: url("crystal.jpg");
+    background-position: right top;
 }
 .amethyst,
 .lapis,
@@ -8,4 +10,9 @@ body{
 .pearl {
     width: 200px;
     height: 300px;
+}
+.container {
+    background: white;
+    border: 12px solid pink;
+    padding: 10px;
 }
