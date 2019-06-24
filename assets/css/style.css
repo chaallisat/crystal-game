@@ -16,3 +16,10 @@ body{
     border: 12px solid pink;
     padding: 10px;
 }
+
+@media only screen and (max-width: 600) {
+    .diamond {
+        width: 200px;
+        height: 150px;
+    }
+}

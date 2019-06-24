@@ -18,7 +18,7 @@ function enemy() {
     comScore = randomNumber
   //  console.log(randomNumber);
     console.log(comScore);
-    return $("#number-to-guess").append(comScore);
+    return $("#number-to-guess").text(comScore);
     
 }
 enemy();
@@ -32,7 +32,10 @@ const amGem = randomAm;
 const laGem = randomLa;
 const perryGem = randomPerry;
 const pearlGem = randomPearl;
-
+console.log(amGem);
+console.log(laGem);
+console.log(perryGem);
+console.log(pearlGem);
 //player's score starts at 0
 //each click will add to player's score
 
@@ -72,29 +75,46 @@ $(".pearl").on("click", function(){
 
 }
 Gem()
-function resetGame(){
+/*function resetGame(){
     if (userScore >= comScore) {
     
     userScore = 0;
     comScore = 0;
     Gem();
+    enemy();
     }
     
-}
+}*/
 
 function winLoss() {
 if (comScore === userScore){
-    alert("We did it......I think!");
+    alert("We did it! We defeated White Diamond!");
     win++
     $(".win-stats").html("<h4>Wins: " + win + "</h4>");
-    resetGame();
+    //resetGame();
+    userScore = 0;
+    comScore = 0;
+    laGem = 0;
+    amGem = 0;
+    pearlGem = 0;
+    perryGem = 0;
+    Gem();
+    enemy();
 }
 if (userScore > comScore){
     alert("Oh no!! Our tummies hurt and White Diamond wins.");
     alert("Let's try again.");
     loss++
     $(".loss-stats").html("<h4>Losses: " + loss + "</h4>");
-    resetGame();
+    //resetGame();
+    userScore = 0;
+    comScore = 0;
+    laGem = 0;
+    amGem = 0;
+    pearlGem = 0;
+    perryGem = 0;
+    Gem();
+    enemy();
 }
 }
 
