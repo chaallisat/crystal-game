@@ -1,7 +1,7 @@
 body{
     background-color: azure;
     text-align: center;
-    background-image: url("crystal.jpg");
+    background-image: url("../images/crystal.jpg");
     background-position: right top;
 }
 .amethyst,
